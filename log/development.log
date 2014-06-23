@@ -1,0 +1,894 @@
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-06-22 21:50:44 -0300
+Connecting to database specified by database.yml
+
+ActiveRecord::ConnectionNotEstablished (ActiveRecord::ConnectionNotEstablished):
+  activerecord (3.2.16) lib/active_record/connection_adapters/abstract/connection_pool.rb:410:in `retrieve_connection'
+  activerecord (3.2.16) lib/active_record/connection_adapters/abstract/connection_specification.rb:171:in `retrieve_connection'
+  activerecord (3.2.16) lib/active_record/connection_adapters/abstract/connection_specification.rb:145:in `connection'
+  activerecord (3.2.16) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.16) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.16) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `_run__2703147552067969758__call__4017508951815181930__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.7ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (53.1ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-06-22 21:56:40 -0300
+Connecting to database specified by database.yml
+
+
+Started GET "/auth/facebook/callback?code=AQA8-6_LoJ1al6Hh7mvvBTqpoA2Z9aUXqC3ygaeN5H4iX2cZq15j8GoXd8VtLSqIJ5pBLqRUCP-1zA7wzT0I78gzwuT6m-d3UY3F6ZSdyEZdneo1sbTIIwqFxA5eSHnbCOOnj_VHTgsJICSTM-nsrvV98tWyEdvxx0yLtVvzRDHOOJM_DDaOnO6H9wuNMwOXV-wzIrejjEQsc3Zj8Incq5KP4-ohQTrDMlmDS-Cpi42PU1OLdo7OBhxyh6wJkWjKm-SkmtGdnLgU_3v9FGzHZBpSfRO4qsKYtLdbZnxWFk5bRcfLQFf413xR4a4gE_R1IIE&state=f2ba2e39c78579e0623c277d72ee970d49fd2a91ec6ad578" for 127.0.0.1 at 2014-06-22 21:57:00 -0300
+
+ActionController::RoutingError (No route matches [GET] "/auth/facebook/callback"):
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (45.3ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/auth/facebook/callback?code=AQA8-6_LoJ1al6Hh7mvvBTqpoA2Z9aUXqC3ygaeN5H4iX2cZq15j8GoXd8VtLSqIJ5pBLqRUCP-1zA7wzT0I78gzwuT6m-d3UY3F6ZSdyEZdneo1sbTIIwqFxA5eSHnbCOOnj_VHTgsJICSTM-nsrvV98tWyEdvxx0yLtVvzRDHOOJM_DDaOnO6H9wuNMwOXV-wzIrejjEQsc3Zj8Incq5KP4-ohQTrDMlmDS-Cpi42PU1OLdo7OBhxyh6wJkWjKm-SkmtGdnLgU_3v9FGzHZBpSfRO4qsKYtLdbZnxWFk5bRcfLQFf413xR4a4gE_R1IIE&state=f2ba2e39c78579e0623c277d72ee970d49fd2a91ec6ad578" for 127.0.0.1 at 2014-06-22 22:29:36 -0300
+
+OmniAuth::Strategies::OAuth2::CallbackError (csrf_detected | CSRF detected):
+  omniauth (1.2.1) lib/omniauth/failure_endpoint.rb:25:in `raise_out!'
+  omniauth (1.2.1) lib/omniauth/failure_endpoint.rb:20:in `call'
+  omniauth (1.2.1) lib/omniauth/failure_endpoint.rb:12:in `call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:475:in `fail!'
+  omniauth-oauth2 (1.1.2) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:71:in `callback_phase'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/builder.rb:59:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.16) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.16) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `_run__808937458725033500__call__2521240370511216510__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.2ms)
+
+
+Started GET "/auth/facebook/callback?code=AQA8-6_LoJ1al6Hh7mvvBTqpoA2Z9aUXqC3ygaeN5H4iX2cZq15j8GoXd8VtLSqIJ5pBLqRUCP-1zA7wzT0I78gzwuT6m-d3UY3F6ZSdyEZdneo1sbTIIwqFxA5eSHnbCOOnj_VHTgsJICSTM-nsrvV98tWyEdvxx0yLtVvzRDHOOJM_DDaOnO6H9wuNMwOXV-wzIrejjEQsc3Zj8Incq5KP4-ohQTrDMlmDS-Cpi42PU1OLdo7OBhxyh6wJkWjKm-SkmtGdnLgU_3v9FGzHZBpSfRO4qsKYtLdbZnxWFk5bRcfLQFf413xR4a4gE_R1IIE&state=f2ba2e39c78579e0623c277d72ee970d49fd2a91ec6ad578" for 127.0.0.1 at 2014-06-22 22:29:42 -0300
+
+OmniAuth::Strategies::OAuth2::CallbackError (csrf_detected | CSRF detected):
+  omniauth (1.2.1) lib/omniauth/failure_endpoint.rb:25:in `raise_out!'
+  omniauth (1.2.1) lib/omniauth/failure_endpoint.rb:20:in `call'
+  omniauth (1.2.1) lib/omniauth/failure_endpoint.rb:12:in `call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:475:in `fail!'
+  omniauth-oauth2 (1.1.2) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:71:in `callback_phase'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/builder.rb:59:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.16) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.16) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `_run__808937458725033500__call__2521240370511216510__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.9ms)
+
+
+Started GET "/auth/facebook/callback?code=AQBk9oZZ3YByTdZz2J1-Oi4J777K09heGL4nIbUt1Amz4pFH9q7DDtw_-p4Y6F-RJATwpJZZg266yN_ezLppwl4_j50NHzVy6nB-EWhW1vFxZYicV5QiLzCVV4WfIlk5bvwjkorSQyiqqxEUX0L7SLqPoHel_kscE-c3Rbq1UPoWlInp-_CgindE5swFWgLfBpLl0o_SW8vOkm-ly9EJdJUUOKSw8ZG31CPLkr2G9hKlyKpuJdthGdc9UL8QM93dwt5cXO96fB1PzvT7x8Gw-FBOt4KXbDuGH7b9hbU1wss8jdP8HRJrWP-c4wa-bDu6P8w&state=f2ba2e39c78579e0623c277d72ee970d49fd2a91ec6ad578" for 127.0.0.1 at 2014-06-22 22:29:55 -0300
+
+OmniAuth::Strategies::OAuth2::CallbackError (csrf_detected | CSRF detected):
+  omniauth (1.2.1) lib/omniauth/failure_endpoint.rb:25:in `raise_out!'
+  omniauth (1.2.1) lib/omniauth/failure_endpoint.rb:20:in `call'
+  omniauth (1.2.1) lib/omniauth/failure_endpoint.rb:12:in `call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:475:in `fail!'
+  omniauth-oauth2 (1.1.2) lib/omniauth/strategies/oauth2.rb:73:in `callback_phase'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:71:in `callback_phase'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/builder.rb:59:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.16) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.16) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `_run__808937458725033500__call__2521240370511216510__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.8ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-06-22 22:30:03 -0300
+
+
+Started GET "/auth/facebook/callback?code=AQCw1i69T76XZZqaRSTreRVVeaMuXiwnqWeHgVN42EcassRucN4UWcU2b0Jp_3AP1BhhZpokOmBIeOOOrHFxx8NRnVW1CPGnjZSIJAwFJEBbBOpdAYN2seONz_gsFsbrDxQgYZx4McDW3nWqIU4nMlyqjjkwcvjsAEOEH9Cd6eYNiXphj-gy8r8d1YTtIUDoe_372gMsIxMgiDdSpIFTWLPv6Gy76dBK4W41W6KjMiXm1dgvebCML1AIsYRR505pBzuVXg9ViQhtNGtmT_El403P9vdL-yEgGgF4uZXR8GoYarOVeDFQvaqmVWEzki_STZw&state=91da7305a4986786286ebf91b18275f36bc57510eb699050" for 127.0.0.1 at 2014-06-22 22:30:03 -0300
+
+ActionController::RoutingError (No route matches [GET] "/auth/facebook/callback"):
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-06-22 22:46:32 -0300
+Connecting to database specified by database.yml
+
+
+Started GET "/auth/facebook/callback?code=AQDLURKVhKHPkCqk50a8zUy9nO9JQzl8h1ZRAjVRzwDnrLiAZBgk6BoP7Va_6ujvlQF0VoY0BBzcSqK0VqHi3Dkh1yEvpH3ubNuuB19g0B3vKOkpB4XvQhboQGUWiizkJt0WducB9opg5ffFzUap0OfNkiL_JyhkgKD3iZ2Zktos0jpFLGIvqMi9SqmhyuTOnR_C4IIMtrR4QjAJ6OrM9XkGRwxYm-1P_l4TEAVlCCOpge8-_3mNJfmPYbs02rvK36gHUkbKDwBGXEeKzvW07iDQmqf3YD-a0LhJcB0SrPWjx04l7s6Q3xMqYKZ7WWedjCk&state=c8137fd5c7d7fdb3f68e2e455c3b7fe213d6f04aa62c1595" for 127.0.0.1 at 2014-06-22 22:46:34 -0300
+Processing by App::SessionsController#create as HTML
+  Parameters: {"code"=>"AQDLURKVhKHPkCqk50a8zUy9nO9JQzl8h1ZRAjVRzwDnrLiAZBgk6BoP7Va_6ujvlQF0VoY0BBzcSqK0VqHi3Dkh1yEvpH3ubNuuB19g0B3vKOkpB4XvQhboQGUWiizkJt0WducB9opg5ffFzUap0OfNkiL_JyhkgKD3iZ2Zktos0jpFLGIvqMi9SqmhyuTOnR_C4IIMtrR4QjAJ6OrM9XkGRwxYm-1P_l4TEAVlCCOpge8-_3mNJfmPYbs02rvK36gHUkbKDwBGXEeKzvW07iDQmqf3YD-a0LhJcB0SrPWjx04l7s6Q3xMqYKZ7WWedjCk", "state"=>"c8137fd5c7d7fdb3f68e2e455c3b7fe213d6f04aa62c1595", "provider"=>"facebook"}
+Completed 500 Internal Server Error in 3.8ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/models/person.rb:14:in `find_or_create_person'
+  app/controllers/app/sessions_controller.rb:4:in `create'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.9ms)
+
+
+Started GET "/auth/facebook/callback?code=AQDLURKVhKHPkCqk50a8zUy9nO9JQzl8h1ZRAjVRzwDnrLiAZBgk6BoP7Va_6ujvlQF0VoY0BBzcSqK0VqHi3Dkh1yEvpH3ubNuuB19g0B3vKOkpB4XvQhboQGUWiizkJt0WducB9opg5ffFzUap0OfNkiL_JyhkgKD3iZ2Zktos0jpFLGIvqMi9SqmhyuTOnR_C4IIMtrR4QjAJ6OrM9XkGRwxYm-1P_l4TEAVlCCOpge8-_3mNJfmPYbs02rvK36gHUkbKDwBGXEeKzvW07iDQmqf3YD-a0LhJcB0SrPWjx04l7s6Q3xMqYKZ7WWedjCk&state=c8137fd5c7d7fdb3f68e2e455c3b7fe213d6f04aa62c1595" for 127.0.0.1 at 2014-06-22 22:48:12 -0300
+
+OAuth2::Error (: 
+{"error":{"message":"This authorization code has been used.","type":"OAuthException","code":100}}):
+  oauth2 (0.9.4) lib/oauth2/client.rb:113:in `request'
+  oauth2 (0.9.4) lib/oauth2/client.rb:138:in `get_token'
+  oauth2 (0.9.4) lib/oauth2/strategy/auth_code.rb:29:in `get_token'
+  omniauth-oauth2 (1.1.2) lib/omniauth/strategies/oauth2.rb:93:in `build_access_token'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:145:in `block in build_access_token'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:171:in `with_authorization_code!'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:145:in `build_access_token'
+  omniauth-oauth2 (1.1.2) lib/omniauth/strategies/oauth2.rb:75:in `callback_phase'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:71:in `callback_phase'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/builder.rb:59:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.16) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.16) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `_run__2833903865818998217__call__167444616336903154__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.8ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-06-22 22:48:40 -0300
+
+
+Started GET "/auth/facebook/callback?code=AQAIHeOMh1fpNbwuAYkSc6Wojn68otM-4JKKl72OafSZEjc3fbzGAGavOik-yVs_hY2MV2WLeEDvqjqw1KZP4MpCBMsorPMa37MyYBbCKCCfyEWAsfWBR4tTAnneyhFjK7jKRfhWlhOMWPDtqhYdm-N7jFXvOmACAm3ZiPTEAVNgbXahuIJtCX2LV2zGoMMtEYdyUIdTzID4B3GieTMGw_hwtIJNKZIvpzQwlCEXjLkFilYnjmT4Pd4-899UDcIlx1MI4puyMgyzNmaEwCxw04tjk1hLoiX4E59xYZG0W89QEC3QrQ3m6iOmS7J9eytcpE4&state=838da7b8b65cfdfed3edd303e5748c76f65041123cc1fbe2" for 127.0.0.1 at 2014-06-22 22:48:40 -0300
+Processing by App::SessionsController#create as HTML
+  Parameters: {"code"=>"AQAIHeOMh1fpNbwuAYkSc6Wojn68otM-4JKKl72OafSZEjc3fbzGAGavOik-yVs_hY2MV2WLeEDvqjqw1KZP4MpCBMsorPMa37MyYBbCKCCfyEWAsfWBR4tTAnneyhFjK7jKRfhWlhOMWPDtqhYdm-N7jFXvOmACAm3ZiPTEAVNgbXahuIJtCX2LV2zGoMMtEYdyUIdTzID4B3GieTMGw_hwtIJNKZIvpzQwlCEXjLkFilYnjmT4Pd4-899UDcIlx1MI4puyMgyzNmaEwCxw04tjk1hLoiX4E59xYZG0W89QEC3QrQ3m6iOmS7J9eytcpE4", "state"=>"838da7b8b65cfdfed3edd303e5748c76f65041123cc1fbe2", "provider"=>"facebook"}
+Mysql2::Error: Table 'what_to_wear.people' doesn't exist: SHOW FULL FIELDS FROM `people`
+Completed 500 Internal Server Error in 213.5ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Table 'what_to_wear.people' doesn't exist: SHOW FULL FIELDS FROM `people`):
+  app/models/person.rb:15:in `find_or_create_person'
+  app/controllers/app/sessions_controller.rb:4:in `create'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.4ms)
+Connecting to database specified by database.yml
+  [1m[36m (102.2ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (190.4ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (3.8ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePeople (20140623011055)
+  [1m[35m (94.1ms)[0m  CREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `image` varchar(255), `gender` varchar(255), `email` varchar(255), `uid` varchar(255), `oauth_token` varchar(255), `oauth_expires_at` datetime, `nick_name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (40.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20140623011055')[0m
+  [1m[35m (0.6ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-06-22 22:50:47 -0300
+
+
+Started GET "/auth/facebook/callback?code=AQDD_qVQCS9amDY65-Egk4kkTAKKbN4pQAABPHB9HHcPMWsQZ_1jvA_0BwvRPtbTjS7tgxKYrPvFL2plNo1w6NT3Va6DOrE_wI5lvBJiW6l6V01Jw0HQa3M96uka-JIN2N9K4KK9f3r7iQKnSzrmqsA3t8g1w2Pi3TmIVHXQqwh8tiyZxksyA_iXYP-fKqHbNqyINce9Z0ShqePY-WGMFX9uYn9Y0YhMZPJDkGCMPwq2IAd9pCcH3qT_0X1Xo57B39Q5YLWBoiGncDd6HK8Dzhkfov0CRZC1JAzOZQN8Q7iRpFZxYJybY_0n-5y1DQGcKiY&state=41be9c4606ef85b23c8327509b4aea88366e2762dfa35803" for 127.0.0.1 at 2014-06-22 22:50:47 -0300
+Processing by App::SessionsController#create as HTML
+  Parameters: {"code"=>"AQDD_qVQCS9amDY65-Egk4kkTAKKbN4pQAABPHB9HHcPMWsQZ_1jvA_0BwvRPtbTjS7tgxKYrPvFL2plNo1w6NT3Va6DOrE_wI5lvBJiW6l6V01Jw0HQa3M96uka-JIN2N9K4KK9f3r7iQKnSzrmqsA3t8g1w2Pi3TmIVHXQqwh8tiyZxksyA_iXYP-fKqHbNqyINce9Z0ShqePY-WGMFX9uYn9Y0YhMZPJDkGCMPwq2IAd9pCcH3qT_0X1Xo57B39Q5YLWBoiGncDd6HK8Dzhkfov0CRZC1JAzOZQN8Q7iRpFZxYJybY_0n-5y1DQGcKiY", "state"=>"41be9c4606ef85b23c8327509b4aea88366e2762dfa35803", "provider"=>"facebook"}
+  [1m[36mPerson Load (0.8ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `uid`.`uid` = '660653154016875' LIMIT 1[0m
+Mysql2::Error: Unknown column 'uid.uid' in 'where clause': SELECT  `people`.* FROM `people`  WHERE `uid`.`uid` = '660653154016875' LIMIT 1
+Completed 500 Internal Server Error in 13.6ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'uid.uid' in 'where clause': SELECT  `people`.* FROM `people`  WHERE `uid`.`uid` = '660653154016875' LIMIT 1):
+  app/models/person.rb:15:in `find_or_create_person'
+  app/controllers/app/sessions_controller.rb:4:in `create'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.5ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-06-22 22:51:43 -0300
+
+
+Started GET "/auth/facebook/callback?code=AQCUl17HRQX_dWSxRFv-zkQvuUJBsCXlM1Kph1UHyr1EMW5TqdNl-OVMg-_61_aE_rXVRYynH1z7BRX4zc7u57c0ApaOS_8yHa8kTUA8gCT8nF_VM3aWu8J-rcteW2piLB07G-np0cZSrnPxA7ieEW9huKzQfMADR7Phtn1aV_9KAieAuhzCG5cqH6ZWa2j0b_7cbLRgZzHeG-WeLlKAzOwPD2MtwOsJT9mCLSCMvn-QEfkP6tiLQljzWfz370GJt0fakA5TWm1j7D8pBMoQuBew8ETgP9Lgcm9jN6QKdf7YPrFwTMfmJjn9-YCteggZwhc&state=bf313d4f3a44d0a9a29c0d339b8e3fcb8980ea82611f9164" for 127.0.0.1 at 2014-06-22 22:51:43 -0300
+Processing by App::SessionsController#create as HTML
+  Parameters: {"code"=>"AQCUl17HRQX_dWSxRFv-zkQvuUJBsCXlM1Kph1UHyr1EMW5TqdNl-OVMg-_61_aE_rXVRYynH1z7BRX4zc7u57c0ApaOS_8yHa8kTUA8gCT8nF_VM3aWu8J-rcteW2piLB07G-np0cZSrnPxA7ieEW9huKzQfMADR7Phtn1aV_9KAieAuhzCG5cqH6ZWa2j0b_7cbLRgZzHeG-WeLlKAzOwPD2MtwOsJT9mCLSCMvn-QEfkP6tiLQljzWfz370GJt0fakA5TWm1j7D8pBMoQuBew8ETgP9Lgcm9jN6QKdf7YPrFwTMfmJjn9-YCteggZwhc", "state"=>"bf313d4f3a44d0a9a29c0d339b8e3fcb8980ea82611f9164", "provider"=>"facebook"}
+  [1m[35mPerson Load (0.8ms)[0m  SELECT `people`.* FROM `people` WHERE `people`.`uid` = '660653154016875'
+  [1m[36mPerson Load (0.7ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `people`.`uid` = '660653154016875' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `people`.* FROM `people` WHERE `people`.`uid` = '660653154016875' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `people`.`uid` = '660653154016875' LIMIT 1[0m
+  [1m[35mPerson Load (1.1ms)[0m  SELECT `people`.* FROM `people` WHERE `uid`.`uid` = '660653154016875' LIMIT 1
+Mysql2::Error: Unknown column 'uid.uid' in 'where clause': SELECT  `people`.* FROM `people`  WHERE `uid`.`uid` = '660653154016875' LIMIT 1
+Completed 500 Internal Server Error in 585841.0ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'uid.uid' in 'where clause': SELECT  `people`.* FROM `people`  WHERE `uid`.`uid` = '660653154016875' LIMIT 1):
+  app/models/person.rb:16:in `find_or_create_person'
+  app/controllers/app/sessions_controller.rb:4:in `create'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-06-22 23:02:30 -0300
+
+
+Started GET "/auth/facebook/callback?code=AQDRxMdPIT53AqrldHKu2vRgUXt-1Z-QJTAxDdhKMRRNz9EMuuQKD_2VWTB71w7mx-zNSQoXGQH6nsepxCmigLb_h412zLQWKbDQfn8AFZjoAPVW-vqoPcY97RCxkRjHVg5MEjYhqzHVWYUxmqyZmSijMLhGpbCIrhWT9WKVLrvYmo8tkAKFiUailfVsI-BE8PRbeWsigBwPtcT5taR9QFl3VWURJclpeKdKG5r77acqgrmkSc7xtG1IfCDTiz5QBUU8jrW7RNqpkc4f4pJags4Z4cJyYB9hb8zUIP_EiKLuVNIiXlIMAdi2lFGxobBHu60&state=79d67cc470ee3f5d71a9808ddeb9b9d726cee4654e38a4c4" for 127.0.0.1 at 2014-06-22 23:02:30 -0300
+Processing by App::SessionsController#create as HTML
+  Parameters: {"code"=>"AQDRxMdPIT53AqrldHKu2vRgUXt-1Z-QJTAxDdhKMRRNz9EMuuQKD_2VWTB71w7mx-zNSQoXGQH6nsepxCmigLb_h412zLQWKbDQfn8AFZjoAPVW-vqoPcY97RCxkRjHVg5MEjYhqzHVWYUxmqyZmSijMLhGpbCIrhWT9WKVLrvYmo8tkAKFiUailfVsI-BE8PRbeWsigBwPtcT5taR9QFl3VWURJclpeKdKG5r77acqgrmkSc7xtG1IfCDTiz5QBUU8jrW7RNqpkc4f4pJags4Z4cJyYB9hb8zUIP_EiKLuVNIiXlIMAdi2lFGxobBHu60", "state"=>"79d67cc470ee3f5d71a9808ddeb9b9d726cee4654e38a4c4", "provider"=>"facebook"}
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `people`.`uid` = '660653154016875' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `people` (`created_at`, `email`, `first_name`, `gender`, `image`, `last_name`, `nick_name`, `oauth_expires_at`, `oauth_token`, `uid`, `updated_at`) VALUES ('2014-06-23 02:02:31', 'nih.williams@gmail.com', 'Nícolas', 'male', 'nih.williams@gmail.com', 'Lima Marçal', NULL, '2014-08-22 00:57:00', 'CAAUEQcRETscBAEk6Af4mS11yHfqrTpHzJUqcjRtYO57UWXLDZCXtZAN2ky2fKcA2NOrK7KWJwZCZCKTLMZBewOPxp0BlZAcIpAbegRsDhLqy35YcloT9Ku4i7H6JYZBmTJY9vpW12klq953eTBBIlZCZAZA4AZCmVxuLJ8KXxZAakOdVroaXfL2MQL5D7KTrQ9Km94YZD', '660653154016875', '2014-06-23 02:02:31')[0m
+  [1m[35m (45.8ms)[0m  COMMIT
+Redirected to http://localhost:3000google.com
+Completed 302 Found in 163.7ms (ActiveRecord: 50.2ms)
+
+
+Started GET "/auth/facebook/callback?code=AQDRxMdPIT53AqrldHKu2vRgUXt-1Z-QJTAxDdhKMRRNz9EMuuQKD_2VWTB71w7mx-zNSQoXGQH6nsepxCmigLb_h412zLQWKbDQfn8AFZjoAPVW-vqoPcY97RCxkRjHVg5MEjYhqzHVWYUxmqyZmSijMLhGpbCIrhWT9WKVLrvYmo8tkAKFiUailfVsI-BE8PRbeWsigBwPtcT5taR9QFl3VWURJclpeKdKG5r77acqgrmkSc7xtG1IfCDTiz5QBUU8jrW7RNqpkc4f4pJags4Z4cJyYB9hb8zUIP_EiKLuVNIiXlIMAdi2lFGxobBHu60&state=79d67cc470ee3f5d71a9808ddeb9b9d726cee4654e38a4c4" for 127.0.0.1 at 2014-06-22 23:02:31 -0300
+
+OAuth2::Error (: 
+{"error":{"message":"This authorization code has been used.","type":"OAuthException","code":100}}):
+  oauth2 (0.9.4) lib/oauth2/client.rb:113:in `request'
+  oauth2 (0.9.4) lib/oauth2/client.rb:138:in `get_token'
+  oauth2 (0.9.4) lib/oauth2/strategy/auth_code.rb:29:in `get_token'
+  omniauth-oauth2 (1.1.2) lib/omniauth/strategies/oauth2.rb:93:in `build_access_token'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:145:in `block in build_access_token'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:171:in `with_authorization_code!'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:145:in `build_access_token'
+  omniauth-oauth2 (1.1.2) lib/omniauth/strategies/oauth2.rb:75:in `callback_phase'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:71:in `callback_phase'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/builder.rb:59:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.16) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.16) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `_run__2833903865818998217__call__167444616336903154__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.3ms)
+
+
+Started GET "/auth/facebook/callback?code=AQDRxMdPIT53AqrldHKu2vRgUXt-1Z-QJTAxDdhKMRRNz9EMuuQKD_2VWTB71w7mx-zNSQoXGQH6nsepxCmigLb_h412zLQWKbDQfn8AFZjoAPVW-vqoPcY97RCxkRjHVg5MEjYhqzHVWYUxmqyZmSijMLhGpbCIrhWT9WKVLrvYmo8tkAKFiUailfVsI-BE8PRbeWsigBwPtcT5taR9QFl3VWURJclpeKdKG5r77acqgrmkSc7xtG1IfCDTiz5QBUU8jrW7RNqpkc4f4pJags4Z4cJyYB9hb8zUIP_EiKLuVNIiXlIMAdi2lFGxobBHu60&state=79d67cc470ee3f5d71a9808ddeb9b9d726cee4654e38a4c4" for 127.0.0.1 at 2014-06-22 23:02:40 -0300
+
+OAuth2::Error (: 
+{"error":{"message":"This authorization code has been used.","type":"OAuthException","code":100}}):
+  oauth2 (0.9.4) lib/oauth2/client.rb:113:in `request'
+  oauth2 (0.9.4) lib/oauth2/client.rb:138:in `get_token'
+  oauth2 (0.9.4) lib/oauth2/strategy/auth_code.rb:29:in `get_token'
+  omniauth-oauth2 (1.1.2) lib/omniauth/strategies/oauth2.rb:93:in `build_access_token'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:145:in `block in build_access_token'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:171:in `with_authorization_code!'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:145:in `build_access_token'
+  omniauth-oauth2 (1.1.2) lib/omniauth/strategies/oauth2.rb:75:in `callback_phase'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:71:in `callback_phase'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/builder.rb:59:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.16) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.16) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `_run__2833903865818998217__call__167444616336903154__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.3ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-06-22 23:02:50 -0300
+
+
+Started GET "/auth/facebook/callback?code=AQAKTpxYK-f1XB-AMm7L5_Xm3bdSzXpMrDoGM_NdU5N2tkZ8Tutn3hrBk-_8NPqXrwdZPHFikALDCGGHsHPiiSE0FygHKhX6lzrWFckeWW5yqgHS_6E9R_VygUnpKl7y3zea1XqWPwyQzzinLmFccy149fxY1Z1QWIpMI4nSMUlSORylp5llf0fJGzKwomhfa2tXhlQ9MYacqDLwvrCBDgZeFGve_DW9OHKNejUaVdHpu4-iK9UjlwqnyO8pabAMFXZAauWwRDoOuHnlZHZPzpWC7PI89W9un9-6zyFtwfz-k8jcxc9656kO3PO2dpfFSio&state=730026260db93caf4d151434e153a0150af36c0415f15102" for 127.0.0.1 at 2014-06-22 23:02:50 -0300
+Processing by App::SessionsController#create as HTML
+  Parameters: {"code"=>"AQAKTpxYK-f1XB-AMm7L5_Xm3bdSzXpMrDoGM_NdU5N2tkZ8Tutn3hrBk-_8NPqXrwdZPHFikALDCGGHsHPiiSE0FygHKhX6lzrWFckeWW5yqgHS_6E9R_VygUnpKl7y3zea1XqWPwyQzzinLmFccy149fxY1Z1QWIpMI4nSMUlSORylp5llf0fJGzKwomhfa2tXhlQ9MYacqDLwvrCBDgZeFGve_DW9OHKNejUaVdHpu4-iK9UjlwqnyO8pabAMFXZAauWwRDoOuHnlZHZPzpWC7PI89W9un9-6zyFtwfz-k8jcxc9656kO3PO2dpfFSio", "state"=>"730026260db93caf4d151434e153a0150af36c0415f15102", "provider"=>"facebook"}
+  [1m[36mPerson Load (0.7ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `people`.`uid` = '660653154016875' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mUPDATE `people` SET `oauth_token` = 'CAAUEQcRETscBAFEMS0NZBTjwxxjX5Lsd2GeV6MaiL27CKtJWQVhYZAiZCJMoEgCU7V79GUGgEQDWZBOrJqSbWQvXTIH6zLuHt4s47qWC7DjZA9WXjti4KcsODjwvZBsqPgsPTZBctlc8rM2PNPk2fo9z3pQajqQqtU4IReaQjLAhv5ZB5w4gzYUcYfmyUHWlcPYZD', `updated_at` = '2014-06-23 02:02:51' WHERE `people`.`id` = 1[0m
+  [1m[35m (30.1ms)[0m  COMMIT
+Redirected to http://localhost:3000google.com
+Completed 302 Found in 49.7ms (ActiveRecord: 31.6ms)
+
+
+Started GET "/auth/facebook/callback?code=AQAKTpxYK-f1XB-AMm7L5_Xm3bdSzXpMrDoGM_NdU5N2tkZ8Tutn3hrBk-_8NPqXrwdZPHFikALDCGGHsHPiiSE0FygHKhX6lzrWFckeWW5yqgHS_6E9R_VygUnpKl7y3zea1XqWPwyQzzinLmFccy149fxY1Z1QWIpMI4nSMUlSORylp5llf0fJGzKwomhfa2tXhlQ9MYacqDLwvrCBDgZeFGve_DW9OHKNejUaVdHpu4-iK9UjlwqnyO8pabAMFXZAauWwRDoOuHnlZHZPzpWC7PI89W9un9-6zyFtwfz-k8jcxc9656kO3PO2dpfFSio&state=730026260db93caf4d151434e153a0150af36c0415f15102" for 127.0.0.1 at 2014-06-22 23:02:51 -0300
+
+OAuth2::Error (: 
+{"error":{"message":"This authorization code has been used.","type":"OAuthException","code":100}}):
+  oauth2 (0.9.4) lib/oauth2/client.rb:113:in `request'
+  oauth2 (0.9.4) lib/oauth2/client.rb:138:in `get_token'
+  oauth2 (0.9.4) lib/oauth2/strategy/auth_code.rb:29:in `get_token'
+  omniauth-oauth2 (1.1.2) lib/omniauth/strategies/oauth2.rb:93:in `build_access_token'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:145:in `block in build_access_token'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:171:in `with_authorization_code!'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:145:in `build_access_token'
+  omniauth-oauth2 (1.1.2) lib/omniauth/strategies/oauth2.rb:75:in `callback_phase'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:71:in `callback_phase'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/builder.rb:59:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.16) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.16) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `_run__2833903865818998217__call__167444616336903154__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.2ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-06-22 23:03:01 -0300
+
+
+Started GET "/auth/facebook/callback?code=AQAUg1VAPtobSvX_tl4wyaTJE1mLrZtEFr-VxbFLUqJkkQfasGhmZvHOmtD3LmXKzmwk9L-gZ1UJRuhMrmxBi3OYcvQ6TJ0pE42GK1u7NhwGwGxLJZQeKxlutX5N8-ogP3X7-95p9POt_xMueddC7SF6esVia7r8TQOphaq-pPwUZBwz4hhXJ5XzzufufG1PpRUnP7JBQ-CFUblp24rZu8iiJ-XoWdpcUJzS131_nV6OZ8-zOCsaodiUpETVx8RbCJwJaosHOwP2v9K0O-vICT35_1guxkUYfXN7c_57eRT6g72vg_nHnsXmCNJgPJLKAJQ&state=1761d125bec44c6a5fa493b57b4721cad4acff7b283e4022" for 127.0.0.1 at 2014-06-22 23:03:01 -0300
+Processing by App::SessionsController#create as HTML
+  Parameters: {"code"=>"AQAUg1VAPtobSvX_tl4wyaTJE1mLrZtEFr-VxbFLUqJkkQfasGhmZvHOmtD3LmXKzmwk9L-gZ1UJRuhMrmxBi3OYcvQ6TJ0pE42GK1u7NhwGwGxLJZQeKxlutX5N8-ogP3X7-95p9POt_xMueddC7SF6esVia7r8TQOphaq-pPwUZBwz4hhXJ5XzzufufG1PpRUnP7JBQ-CFUblp24rZu8iiJ-XoWdpcUJzS131_nV6OZ8-zOCsaodiUpETVx8RbCJwJaosHOwP2v9K0O-vICT35_1guxkUYfXN7c_57eRT6g72vg_nHnsXmCNJgPJLKAJQ", "state"=>"1761d125bec44c6a5fa493b57b4721cad4acff7b283e4022", "provider"=>"facebook"}
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `people`.`uid` = '660653154016875' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.9ms)[0m  [1mUPDATE `people` SET `oauth_expires_at` = '2014-08-22 00:56:59', `oauth_token` = 'CAAUEQcRETscBAF5QQrdZAIwqCvhVOZAx9YX1ZAiGrNfwM6ofEIQehqnLBoBst19C0gj0hSZAOPs7V40uHZAUpPkVfvFDYo8319kiNoW59KZCNdjZBZBrchO7XasaBFr3xDC3uuEZCf4U64o3HsFoYTaAZAVQA1yLLEI4Jb6HK6xVVrPoEOPm8XjZAqBLmmaBh5wWhUZD', `updated_at` = '2014-06-23 02:03:02' WHERE `people`.`id` = 1[0m
+  [1m[35m (25.4ms)[0m  COMMIT
+Redirected to http://localhost:3000google.com
+Completed 302 Found in 38.2ms (ActiveRecord: 27.0ms)
+
+
+Started GET "/auth/facebook/callback?code=AQAUg1VAPtobSvX_tl4wyaTJE1mLrZtEFr-VxbFLUqJkkQfasGhmZvHOmtD3LmXKzmwk9L-gZ1UJRuhMrmxBi3OYcvQ6TJ0pE42GK1u7NhwGwGxLJZQeKxlutX5N8-ogP3X7-95p9POt_xMueddC7SF6esVia7r8TQOphaq-pPwUZBwz4hhXJ5XzzufufG1PpRUnP7JBQ-CFUblp24rZu8iiJ-XoWdpcUJzS131_nV6OZ8-zOCsaodiUpETVx8RbCJwJaosHOwP2v9K0O-vICT35_1guxkUYfXN7c_57eRT6g72vg_nHnsXmCNJgPJLKAJQ&state=1761d125bec44c6a5fa493b57b4721cad4acff7b283e4022" for 127.0.0.1 at 2014-06-22 23:03:02 -0300
+
+OAuth2::Error (: 
+{"error":{"message":"This authorization code has been used.","type":"OAuthException","code":100}}):
+  oauth2 (0.9.4) lib/oauth2/client.rb:113:in `request'
+  oauth2 (0.9.4) lib/oauth2/client.rb:138:in `get_token'
+  oauth2 (0.9.4) lib/oauth2/strategy/auth_code.rb:29:in `get_token'
+  omniauth-oauth2 (1.1.2) lib/omniauth/strategies/oauth2.rb:93:in `build_access_token'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:145:in `block in build_access_token'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:171:in `with_authorization_code!'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:145:in `build_access_token'
+  omniauth-oauth2 (1.1.2) lib/omniauth/strategies/oauth2.rb:75:in `callback_phase'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:71:in `callback_phase'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/builder.rb:59:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.16) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.16) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `_run__2833903865818998217__call__167444616336903154__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-06-22 23:03:20 -0300
+
+
+Started GET "/auth/facebook/callback?code=AQDT0bg7F3Xr0SvBvYkXUPvoDfVHH2ccPR08eSUBtqpphACg44kxJh8kELW1jNuHY8l4E1xzAs3PetnFr_u8srGjX9E_Q4C3FkjekYR4cBVBVYdfIN53tgy7t1Zw-EH-lCoTOJS8Pczl3wINz9AKzIP9AltDArrP3P7FLkD6BsNYdCV8Jh5-fZvxc5KfLpcGoZvAhWFIU0bXGgtx8tUjdrLf_NLC062cKnit95tuqNVWankORrpDxfZ5sH3KOA2aAn-XXGh5KSBV4MK9MwQyvv45FveN_TrVyujlg01HKDVQnDo9AjiYM4p9PUQmmwhSLh0&state=eedbad7697f7e122a9d5b5e9d10e4cc3174ba9ed782af293" for 127.0.0.1 at 2014-06-22 23:03:21 -0300
+Processing by App::SessionsController#create as HTML
+  Parameters: {"code"=>"AQDT0bg7F3Xr0SvBvYkXUPvoDfVHH2ccPR08eSUBtqpphACg44kxJh8kELW1jNuHY8l4E1xzAs3PetnFr_u8srGjX9E_Q4C3FkjekYR4cBVBVYdfIN53tgy7t1Zw-EH-lCoTOJS8Pczl3wINz9AKzIP9AltDArrP3P7FLkD6BsNYdCV8Jh5-fZvxc5KfLpcGoZvAhWFIU0bXGgtx8tUjdrLf_NLC062cKnit95tuqNVWankORrpDxfZ5sH3KOA2aAn-XXGh5KSBV4MK9MwQyvv45FveN_TrVyujlg01HKDVQnDo9AjiYM4p9PUQmmwhSLh0", "state"=>"eedbad7697f7e122a9d5b5e9d10e4cc3174ba9ed782af293", "provider"=>"facebook"}
+  [1m[36mPerson Load (0.7ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `people`.`uid` = '660653154016875' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (1.0ms)[0m  [1mUPDATE `people` SET `oauth_token` = 'CAAUEQcRETscBALGRfFkYRSbbyY7mYsHhUfKIZAOaEA073ATXUHMfkUyCJwNRZBTAmvz64K5gbWkZC0b8eNzjYdVMw1ZBUepFpfzvRMmcJeWaLTFsma214qYfpMb4XfyafVDVIBNvyDIzet6OXdhjPTAVYCdAwEYZCwSWqQqWRh16VDRbLvZBp1hIjUHkOVaFAZD', `updated_at` = '2014-06-23 02:03:32' WHERE `people`.`id` = 1[0m
+  [1m[35m (24.6ms)[0m  COMMIT
+Redirected to http://localhost:3000google.com
+Completed 302 Found in 44.8ms (ActiveRecord: 26.8ms)
+
+
+Started GET "/auth/facebook/callback?code=AQDT0bg7F3Xr0SvBvYkXUPvoDfVHH2ccPR08eSUBtqpphACg44kxJh8kELW1jNuHY8l4E1xzAs3PetnFr_u8srGjX9E_Q4C3FkjekYR4cBVBVYdfIN53tgy7t1Zw-EH-lCoTOJS8Pczl3wINz9AKzIP9AltDArrP3P7FLkD6BsNYdCV8Jh5-fZvxc5KfLpcGoZvAhWFIU0bXGgtx8tUjdrLf_NLC062cKnit95tuqNVWankORrpDxfZ5sH3KOA2aAn-XXGh5KSBV4MK9MwQyvv45FveN_TrVyujlg01HKDVQnDo9AjiYM4p9PUQmmwhSLh0&state=eedbad7697f7e122a9d5b5e9d10e4cc3174ba9ed782af293" for 127.0.0.1 at 2014-06-22 23:03:32 -0300
+
+OAuth2::Error (: 
+{"error":{"message":"This authorization code has been used.","type":"OAuthException","code":100}}):
+  oauth2 (0.9.4) lib/oauth2/client.rb:113:in `request'
+  oauth2 (0.9.4) lib/oauth2/client.rb:138:in `get_token'
+  oauth2 (0.9.4) lib/oauth2/strategy/auth_code.rb:29:in `get_token'
+  omniauth-oauth2 (1.1.2) lib/omniauth/strategies/oauth2.rb:93:in `build_access_token'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:145:in `block in build_access_token'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:171:in `with_authorization_code!'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:145:in `build_access_token'
+  omniauth-oauth2 (1.1.2) lib/omniauth/strategies/oauth2.rb:75:in `callback_phase'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:71:in `callback_phase'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/builder.rb:59:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.16) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.16) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `_run__2833903865818998217__call__167444616336903154__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-06-22 23:05:08 -0300
+
+
+Started GET "/auth/facebook/callback?code=AQBGxjigpLCkSpqZO3CQ2kJmQ6DRwBsXT26Kk7DToXm_bBVXDtXJeYcaLbktit1hpap--IVmYefDn3kKILze8zYtpuJRxgqS2xrruejz84TKXhNGfalLLfoQYhGtuiZgBpeJhUREEs3IJ9yinuMXO5CBGK91Hm1-0HkqzTidzVZsQbCsuUoQHMKQ2tabUNsmRwK-1UWVHTsB6npW6bxv73I8KhPHXhrRynNCSmwFGarBJNyCP4B-pxf8INB5dbnXUZ_xXLOIDC3NdbV3MB410kSQJLEWUvWrOx6uInfaol04cP58hLyTzTxh6OesgpU7JEg&state=42e2121faa6afd64c1478b9a3e7016bd16f4949b06a6cac2" for 127.0.0.1 at 2014-06-22 23:05:20 -0300
+Processing by App::SessionsController#create as HTML
+  Parameters: {"code"=>"AQBGxjigpLCkSpqZO3CQ2kJmQ6DRwBsXT26Kk7DToXm_bBVXDtXJeYcaLbktit1hpap--IVmYefDn3kKILze8zYtpuJRxgqS2xrruejz84TKXhNGfalLLfoQYhGtuiZgBpeJhUREEs3IJ9yinuMXO5CBGK91Hm1-0HkqzTidzVZsQbCsuUoQHMKQ2tabUNsmRwK-1UWVHTsB6npW6bxv73I8KhPHXhrRynNCSmwFGarBJNyCP4B-pxf8INB5dbnXUZ_xXLOIDC3NdbV3MB410kSQJLEWUvWrOx6uInfaol04cP58hLyTzTxh6OesgpU7JEg", "state"=>"42e2121faa6afd64c1478b9a3e7016bd16f4949b06a6cac2", "provider"=>"facebook"}
+  [1m[36mPerson Load (0.7ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `people`.`uid` = '660653154016875' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.9ms)[0m  [1mUPDATE `people` SET `oauth_expires_at` = '2014-08-22 00:57:00', `oauth_token` = 'CAAUEQcRETscBAORwO7mqShCVHk89NcFluwf3sUXzlIQNKtmBeb3qUl1ZBBQInk4LH5cnPCJsQ7JZAdSaZC1pBKqLOZB4NcPegcROlXkKxZClrpMId8dySCKzCy4njvW6ZBb8qp5o2PjVPTaPiMRrJXpahfkVPx19XfV06rXoEWNHK2zNwRFw8VnZBTEEXdWfTgZD', `updated_at` = '2014-06-23 02:05:20' WHERE `people`.`id` = 1[0m
+  [1m[35m (31.6ms)[0m  COMMIT
+Redirected to http://localhost:3000google.com
+Completed 302 Found in 42.5ms (ActiveRecord: 33.4ms)
+
+
+Started GET "/auth/facebook/callback?code=AQBGxjigpLCkSpqZO3CQ2kJmQ6DRwBsXT26Kk7DToXm_bBVXDtXJeYcaLbktit1hpap--IVmYefDn3kKILze8zYtpuJRxgqS2xrruejz84TKXhNGfalLLfoQYhGtuiZgBpeJhUREEs3IJ9yinuMXO5CBGK91Hm1-0HkqzTidzVZsQbCsuUoQHMKQ2tabUNsmRwK-1UWVHTsB6npW6bxv73I8KhPHXhrRynNCSmwFGarBJNyCP4B-pxf8INB5dbnXUZ_xXLOIDC3NdbV3MB410kSQJLEWUvWrOx6uInfaol04cP58hLyTzTxh6OesgpU7JEg&state=42e2121faa6afd64c1478b9a3e7016bd16f4949b06a6cac2" for 127.0.0.1 at 2014-06-22 23:05:20 -0300
+
+OAuth2::Error (: 
+{"error":{"message":"This authorization code has been used.","type":"OAuthException","code":100}}):
+  oauth2 (0.9.4) lib/oauth2/client.rb:113:in `request'
+  oauth2 (0.9.4) lib/oauth2/client.rb:138:in `get_token'
+  oauth2 (0.9.4) lib/oauth2/strategy/auth_code.rb:29:in `get_token'
+  omniauth-oauth2 (1.1.2) lib/omniauth/strategies/oauth2.rb:93:in `build_access_token'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:145:in `block in build_access_token'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:171:in `with_authorization_code!'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:145:in `build_access_token'
+  omniauth-oauth2 (1.1.2) lib/omniauth/strategies/oauth2.rb:75:in `callback_phase'
+  omniauth-facebook (1.6.0) lib/omniauth/strategies/facebook.rb:71:in `callback_phase'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/builder.rb:59:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.16) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.16) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `_run__2833903865818998217__call__167444616336903154__callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.16) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.16) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/nicolas/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+Connecting to database specified by database.yml

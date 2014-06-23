@@ -2,6 +2,9 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
+FACEBOOK_KEY = "1412055395749575"
+FACEBOOK_SECRET = "dff43c4bb05f686dc748848e2953dcef"
+
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
   Bundler.require(*Rails.groups(:assets => %w(development test)))
