@@ -4,6 +4,6 @@ class App::AppController < ApplicationController
   protected
 
   def set_logged_person
-    @logged_person ||= User.find(sessions[:person_id])
+    @logged_person ||= Person.find(session[:person_id])
   end
 end
